@@ -22,7 +22,6 @@ The application is built using Flask, containerized with Docker, deployed on AWS
 ├── app.py                     # The Flask application
 ├── Dockerfile                 # Docker container definition
 ├── requirements.txt           # Python dependencies
-├── test_app.py                # Unit tests
 ├── Jenkinsfile                # Jenkins pipeline definition
 └── terraform/                 # IaC for AWS
     ├── main.tf                # Main Terraform configuration
@@ -67,7 +66,6 @@ docker build -t ip-reverser .
 docker run -p 8080:8080 ip-reverser
 ```
 
-Visit http://localhost:8080 in your browser.
 
 ## Infrastructure Setup
 
