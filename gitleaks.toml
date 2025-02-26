@@ -1,0 +1,18 @@
+# .github/gitleaks.toml
+title = "GitLeaks Config"
+
+# Define allowed patterns (false positives)
+[[allowlist]]
+description = "Allowed patterns"
+regexes = [
+    # Example: Allow test credentials in specific test files
+    '''DUMMY_API_KEY''',
+    '''TEST_SECRET''',
+]
+
+# Path exclusions
+[[allowlist]]
+description = "Exclude test paths"
+paths = [
+    '''(^|/)test/''',
+]
